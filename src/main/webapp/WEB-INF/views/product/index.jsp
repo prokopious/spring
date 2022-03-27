@@ -8,27 +8,12 @@
 </head>
 <body>
 
-	<h3>Products List</h3>
-	<table border="1" cellpadding="2" cellspacing="2">
-		<tr>
-			<th>Id</th>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Status</th>
-			<th>Price</th>
-			<th>Quantity</th>
-		</tr>
-		<c:forEach var="product" items="${products }">
-			<tr>
-				<td>${product.id }</td>
-				<td>${product.name }</td>
-				<td>${product.description }</td>
-				<td>${product.status }</td>
-				<td>${product.price }</td>
-				<td>${product.quantity }</td>
-			</tr>
-		</c:forEach>
-	</table>
+	<h1>Add Animal</h1> 
+    <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
+    	<p id="animal">Animal: <input type="text" th:field="*{animal}" /></p>
+        <p>Description: <input type="text" th:field="*{description}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
 
 </body>
 </html>

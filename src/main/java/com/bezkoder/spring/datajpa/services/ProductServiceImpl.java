@@ -17,5 +17,7 @@ public class ProductServiceImpl implements ProductService {
 	public Iterable<Animal> findAll() {
 		return productRepository.findAll();
 	}
+	
+	
 
 }
