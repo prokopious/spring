@@ -1,7 +1,7 @@
 # Web App for Remote Testing Practice
 
           This project consists of a server, a frontend, and a MySQL database.
-          The server is a Heroku Spring Boot Rest API for MySQL CRUD operations
+          The server (this repo) is a Heroku Spring Boot Rest API for MySQL CRUD operations
           with an additional endpoint for remotely running headless Selenium
           tests via HtmlUnitDriver. The tests themselves are written on the
           client side (second site) and sent via POST request in the form of an
